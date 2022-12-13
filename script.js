@@ -42,7 +42,7 @@ var firebaseConfig = {
       firebaseRef.set(Number(sliderRed.value));           
   }
 
-      Mode.onclick = function(){
+      Mode.onchange = function(){
         SelectMode.innerHTML = this.value; /* able to change the value*/
         var firebaseRef = firebase.database().ref().child("Mode");
         firebaseRef.set(Number(Mode.value));        
